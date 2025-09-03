@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/pc/Desktop/inframe-latest/inframe-frontend/src/app/download/page.js"],"sourcesContent":["export default function Download() {\r\n    return (\r\n        <div className=\"w-full \">\r\n            <div className=\"max-w-[1320] mx-auto lg:px-6 px-3 lg:py-[40px] py-[30px]\">\r\n                download page\r\n            </div>\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC;YAAI,WAAU;sBAA2D;;;;;;;;;;;AAKtF","debugId":null}}]
+}
