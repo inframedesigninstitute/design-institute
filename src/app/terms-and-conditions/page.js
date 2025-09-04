@@ -54,7 +54,7 @@ export default function Terms() {
                 <div className="my-[40px]">
                     <h3 className="text-[30px] font-semibold ">Warranties and Disclaimers</h3>
                     <p className="text-[18px] my-[10px]">
-                        We provide our Services using a commercially reasonable level of skill and care. Other than as expressly set out in these terms or additional terms, IDI does not make any specific promises about the Services. We provide the Services "as is".
+                        We provide our Services using a commercially reasonable level of skill and care. Other than as expressly set out in these terms or additional terms, IDI does not make any specific promises about the Services. We provide the Services &#34;as is&#34;.
                     </p>
                 </div>
             </div>
