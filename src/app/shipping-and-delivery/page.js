@@ -46,7 +46,7 @@ export default function Shipping() {
                 <div className="my-[40px]">
                     <h3 className="text-[30px] font-semibold ">Tracking Your Order</h3>
                     <p className="text-[18px] my-[10px]">
-                        You can track your order using the tracking number provided in your order confirmation email by visiting our delivery partner's website. It may take upto 12-24 hours to update your tracking number on our website.
+                        You can track your order using the tracking number provided in your order confirmation email by visiting our delivery partner&#39;s website. It may take upto 12-24 hours to update your tracking number on our website.
                     </p>
                 </div>
                 <div className="my-[40px]">

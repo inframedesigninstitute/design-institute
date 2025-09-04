@@ -95,7 +95,7 @@ export default function Download() {
             <div className="max-w-[1320px] mx-auto px-6">
                 {allData.map((item, index) => {
                     return (
-                        <div className="mb-[60px] h-auto bg-white pt-8">
+                        <div key={index} className="mb-[60px] h-auto bg-white pt-8">
                             <h2 className="text-3xl lg:text-4xl font-bold  mb-4 text-gray-900 capitalize">{item.category}</h2>
                             <p className=" text-gray-900 mb-10">
                                 {item.description}
@@ -105,7 +105,7 @@ export default function Download() {
 
                                 {item.pdfs.map((pdfItem, pdfIndex) => {
                                     return (
-                                        <div className="bg-white shadow-lg rounded-xl p-6 flex items-start gap-4 hover:shadow-xl transition">
+                                        <div key={pdfIndex} className="bg-white shadow-lg rounded-xl p-6 flex items-start gap-4 hover:shadow-xl transition">
                                             <div className="text-gray-900 text-2xl mt-3">
                                                 <FaDownload />
                                             </div>
