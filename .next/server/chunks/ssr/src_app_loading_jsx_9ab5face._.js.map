@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/pc/Desktop/inframe-latest/inframe-frontend/src/app/loading.jsx"],"sourcesContent":["'use client'\r\nexport function Loader(){\r\n    return (\r\n        <div>hello</div>\r\n    )\r\n}"],"names":[],"mappings":";;;;AAAA;;AACO,SAAS;IACZ,qBACI,8OAAC;kBAAI;;;;;;AAEb","debugId":null}}]
-}

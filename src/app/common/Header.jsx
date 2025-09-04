@@ -12,7 +12,7 @@ import {
   FaPhoneAlt,
   FaUserAlt,
 } from "react-icons/fa";
-import { HiMiniArrowRightStartOnRectangle, HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import {  HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { MdClose } from "react-icons/md";
 import UserControl from "./UserControl";
 import MegaMenu from "../homePageComponents/MegaMenu";
