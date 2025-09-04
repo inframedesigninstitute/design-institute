@@ -28,7 +28,7 @@ export default function FooterNew() {
                                                 key={`${subIdx}-${courseIndex}`}
                                                 href={`/course/${course.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}`}
                                             >
-                                                <li className="my-2 text-[16px] cursor-pointer text-gray-700 duration-300 hover:text-black">
+                                                <li className="my-2 text-[16px] cursor-pointer text-gray-700 duration-300 capitalize hover:text-black">
                                                     {course}
                                                 </li>
                                             </Link>

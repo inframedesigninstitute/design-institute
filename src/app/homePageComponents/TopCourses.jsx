@@ -10,7 +10,7 @@ export default function TopCourses() {
   return (
     <div className="w-full ">
       <div className="max-w-[1320px] lg:px-6 mx-auto px-3">
-        <h3 className="lg:text-[40px] text-[30px] text-start font-bold  text-black lg:py-5  bg-gradient-to-l from-gray-100 via-gray-50 to-white">Top Selling Course</h3>
+        <h3 className="lg:text-[40px] text-[30px] text-start font-bold  text-black lg:py-5  bg-white">Top Selling Course</h3>
         <OnlineCourses />
         <OfflineCourses />
         <StudyMaterial />
@@ -50,43 +50,43 @@ export function OnlineCourses() {
 
   let CoursesData = [
     {
-      title: "NIFT Course",
+      title: "Ceed Course",
       description:
         "Master fashion design skills with interactive online lessons. Prepare confidently for NIFT entrance exams from anywhere",
       image:
-        "study-materials/nift-nid.png",
+        "study-materials/ceed-pg.png",
       price: "1399",
     },
     {
-      title: "NID Course",
+      title: "Nid Course",
       description:
         "Explore creative design skills through interactive online sessions. Get ready for NID admissions with expert guidance anytime, anywhere.",
       image:
-        "study-materials/nift-nid.png",
+        "study-materials/nid-ug.jpg",
       price: "1599",
     },
     {
-      title: "UCEED Course",
+      title: "Uceed Course",
       description:
         "Learn design concepts and problem-solving skills from anywhere. Prepare effectively for the UCEED exam with interactive online lessons.",
       image:
-        "study-materials/nift-nid.png",
+        "study-materials/uceed-ug.jpg",
       price: "799",
     },
     {
-      title: "NATA Course",
+      title: "Nid+Nift+Uceed Course",
       description:
         "Master architecture basics with flexible online lessons. Prepare confidently for the NATA exam from the comfort of your home.",
       image:
-        "study-materials/nift-nid.png",
+        "study-materials/nid-nift-uceed.jpg",
       price: "799",
     },
     {
-      title: "JEE B.Arch Course",
+      title: "Nata+Jee",
       description:
         "Gain expertise in SEO, social media strategy, content marketing, and analytics to effectively promote brands and drive online engagement more extra features .",
       image:
-        "study-materials/nift-nid.png",
+        "study-materials/nata+jee.jpg",
       price: "799",
     },
   ];
@@ -104,22 +104,20 @@ export function OnlineCourses() {
             <div key={index} className="sm:pr-4">
               <div className="rounded-[10px] shadow-sm group overflow-hidden hover:shadow-md transition duration-300">
                 <img
-                  className="w-full h-[200px] object-cover rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
+                  className="w-full h-[390px] object-cover object-top rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
                   src={item.image}
                   alt={item.title}
                 />
-                <div className="p-4 h-[320px]">
+                <div className="p-5 h-[auto]">
                   <Link href={`/course/${item.title.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}><h2 className="text-[18px] duration-300 font-semibold mb-2 hover:text-gray-950 text-gray-500 hover:underline cursor-pointer">{item.title}</h2></Link>
-                  <p className="text-gray-700 text-[14px] text-justify tracking-tighter">
-                    {item.description}
-                  </p>
+
                   <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
                     <FaIndianRupeeSign /> {item.price}/-
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
+                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
                       Add to Cart
-                    </button>
+                    </button></Link>
                     <button className="bg-gray-900 hover:bg-gray-800 transition duration-300 cursor-pointer py-[7px] text-[14px] rounded-lg text-white font-medium">
                       Buy Now
                     </button>
@@ -165,12 +163,12 @@ export function OfflineCourses() {
 
   let CoursesData = [
     {
-      title: "NIFT Course",
+      title: "Combo nata + jee-mains",
       description:
-        "Experience hands-on fashion design training in a classroom setting. Get expert guidance to excel in NIFT entrance exams and projects.",
+        "Gain expertise in SEO, social media strategy, content marketing, and analytics to effectively promote brands and drive online engagement more extra features .",
       image:
-        "https://www.inframedesigninstitute.com/uploads/banner_images/c694c7b0f44dc079b637932381a22432.png",
-      price: "1399",
+        "https://www.inframedesigninstitute.com/assets/upload/images/NATA%20JEE%20B.ARCH-10.jpg",
+      price: "799",
     },
     {
       title: "NID Course",
@@ -211,22 +209,20 @@ export function OfflineCourses() {
             <div key={index} className="sm:pr-4">
               <div className="rounded-[10px] shadow-sm group overflow-hidden hover:shadow-md transition duration-300">
                 <img
-                  className="w-full h-[200px] object-cover object-top rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
+                  className="w-full h-[390px] object-cover object-top rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
                   src={item.image}
                   alt={item.title}
                 />
-                <div className="p-4 h-[320px] ">
+                <div className="p-5 h-[auto]">
                   <Link href={`/course/${item.title.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}><h2 className="text-[18px] duration-300 font-semibold mb-2 hover:text-gray-950 text-gray-500 hover:underline cursor-pointer">{item.title}</h2></Link>
-                  <p className="text-gray-700 text-[14px] text-justify tracking-tighter">
-                    {item.description}
-                  </p>
+
                   <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
                     <FaIndianRupeeSign /> {item.price}/-
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
+                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
                       Add to Cart
-                    </button>
+                    </button></Link>
                     <button className="bg-gray-900 hover:bg-gray-800 transition duration-300 cursor-pointer py-[7px] text-[14px] rounded-lg text-white font-medium">
                       Buy Now
                     </button>
@@ -319,22 +315,20 @@ export function StudyMaterial() {
             <div key={index} className="sm:pr-4">
               <div className="rounded-[10px] shadow-sm group overflow-hidden hover:shadow-md transition duration-300">
                 <img
-                  className="w-full h-[200px] object-cover object-top rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
+                  className="w-full h-[390px] object-cover object-top rounded-t-[10px] group-hover:scale-[1.01] transition duration-300"
                   src={item.image}
                   alt={item.title}
                 />
-                <div className="p-4 h-[320px]">
+                <div className="p-5 h-[auto]">
                   <Link href={`/course/${item.title.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}><h2 className="text-[18px] duration-300 font-semibold mb-2 hover:text-gray-950 text-gray-500 hover:underline cursor-pointer">{item.title}</h2></Link>
-                  <p className="text-gray-700 text-[14px] text-justify tracking-tighter">
-                    {item.description}
-                  </p>
+
                   <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
                     <FaIndianRupeeSign /> {item.price}/-
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
+                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] w-[100%] rounded-lg hover:text-white font-medium">
                       Add to Cart
-                    </button>
+                    </button></Link>
                     <button className="bg-gray-900 hover:bg-gray-800 transition duration-300 cursor-pointer py-[7px] text-[14px] rounded-lg text-white font-medium">
                       Buy Now
                     </button>

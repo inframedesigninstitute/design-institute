@@ -43,22 +43,22 @@ export default function TrustedPlatform() {
 
     let data = [
         {
-            heading: "15 Million+",
+            heading: "5,000+",
             description: "Happy Students",
             src: "/happyStudents.jpg",
         },
         {
-            heading: "24000 +",
+            heading: "10,000 +",
             description: "Mock Tests",
             src: "/mockTest.JPG",
         },
         {
-            heading: "14000 +",
+            heading: "100+",
             description: "Video Lectures",
             src: "/videoLecture.JPG",
         },
         {
-            heading: "80000 +",
+            heading: "5,000 +",
             description: "Practice Papers",
             src: "/practicePaper.JPG",
         },

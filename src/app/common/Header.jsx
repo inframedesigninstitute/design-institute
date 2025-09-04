@@ -31,9 +31,28 @@ export default function Header() {
   useEffect(() => {
     setTimeout(() => {
       setEnquiryModel(true)
-    }, 5000)
+    }, 10000)
   }, [])
 
+  const [selectedProgram, setSelectedProgram] = useState('');
+  const [courseOptions, setCourseOptions] = useState([]);
+
+
+
+  const handleProgramChange = (e) => {
+    const selected = e.target.value;
+    setSelectedProgram(selected);
+
+    // Find the selected parent category in megaMenuData
+    const selectedData = megaMenuData.find(
+      (item) => item.parentCategory === selected
+    );
+
+    // Flatten all courses under subcategories
+    const allCourses =
+      selectedData?.subCategory.flatMap((subCat) => subCat.courses) || [];
+    setCourseOptions(allCourses);
+  }
 
   return (
     <header className="sticky top-0 z-[100] bg-white">
@@ -63,7 +82,7 @@ export default function Header() {
 
           <button
             onClick={() => setEnquiryModel(true)}
-            className="fixed top-1/4 right-[25px] translate-x-[50%] -rotate-90 bg-white  border-2 border-black px-10 py-4 font-semibold cursor-pointer text-[18px] rounded-md shadow-lg  hover:bg-white hover:text-black  duration-500 "
+            className="fixed top-1/4 right-[23px] translate-x-[50%] -rotate-90 bg-white  border-2 border-black px-7 py-[10px] font-semibold cursor-pointer text-[18px] rounded-md shadow-lg  hover:bg-white hover:text-black  duration-500 "
           >
             Enquiry Now
           </button>
@@ -345,27 +364,32 @@ export default function Header() {
         </select>
 
 
-        <select className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500">
-          <option className="cursor-pointer" value="">Select Program</option>
-          {megaMenuData.map((item, index) => {
-            return (
-              <option key={index} className="cursor-pointer" value="">{item.parentCategory}</option>
-            )
-          })}
-
+        <select
+          className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500"
+          onChange={handleProgramChange}
+          value={selectedProgram}
+        >
+          <option value="">Select Program</option>
+          {megaMenuData.map((item, index) => (
+            <option key={index} value={item.parentCategory}>
+              {item.parentCategory}
+            </option>
+          ))}
         </select>
 
-        <select className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500">
-          <option className="cursor-pointer" value="">Select Course</option>
-          {megaMenuData.map((cat, index) =>
-            cat.subCategory.map((subCat, subIndex) =>
-              subCat.courses.map((course, courseInd) => {
-                return (
-                  <option key={index} className="cursor-pointer" value="">{course}</option>
-                )
-              })
-            )
-          )}
+        {/* Select Course */}
+        <select
+          className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500"
+          disabled={!selectedProgram}
+        >
+          <option value="">
+            {selectedProgram ? 'Select Course' : 'Select Program first'}
+          </option>
+          {courseOptions.map((course, index) => (
+            <option key={index} value={course}>
+              {course}
+            </option>
+          ))}
         </select>
 
         <button

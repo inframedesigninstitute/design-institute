@@ -37,25 +37,25 @@ export default function StudyMaterials() {
         {
             heading: "Webinars",
             description:
-                "Our experts have created thorough study materials that break down complicated concepts into easily understandable content",
+                "Access a curated collection of free webinars covering key academic topics, exam strategies, and study techniques. Perfect for self-learners, students, and competitive exam aspirants. Learn from qualified educators—anytime, anywhere.",
             src: "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/f205f69d-b8b3-4f03-b28b-6c6bdd9eeb02.webp",
         },
         {
             heading: "Architecture Series",
             description:
-                "Unlock academic excellence with Physics Wallah’s NCERT Solutions which provides you step-by-step solutions",
-            src: "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/12b4fb81-b903-4c2d-9b09-d79395ef66c2.webp",
+                "Download free study materials on design, planning, and architecture theory. Learn at your own pace—no sign-up needed.",
+            src: "https://www.inframedesigninstitute.com/assets/upload/images/WhatsApp%20Image%202021-04-28%20at%2011.34.20%20PM.png",
         },
         {
             heading: "Free Question Papers",
             description:
-                "Use Physics Wallah’s detailed study materials that simplify complex ideas into easily understandable language",
-            src: "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/3eb5198e-6f36-4df4-ad97-81716b80bab2.webp",
+                "Download subject-wise question papers for practice and self-study. Improve your preparation with quality resources.",
+            src: "/study-materials/2.jpg",
         },
         {
             heading: "Current Affairs",
             description:
-                "Use Physics Wallah’s detailed study materials that simplify complex ideas into easily understandable language",
+                "Use Physics Wallah's detailed study materials that simplify complex ideas into easily understandable language",
             src: "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/3eb5198e-6f36-4df4-ad97-81716b80bab2.webp",
         },
     ];
@@ -77,22 +77,12 @@ export default function StudyMaterials() {
                             className="px-[12px]"
                         >
                             <div
-                                className="w-full lg:h-[350px] h-auto hover:border-b-2 cursor-pointer  group hover:translate-y-[-10px] overflow-hidden transition-all ease-in-out
-                    duration-200
-                    rounded-[15px]
-                    lg:mt-[30px]
-                    hover:bg-gray-100
-                    border-[1px]
-                    border-gray-200
-                    hover:border-b-black
-                    bg-white
-                    p-8
-                  "
+                                className="w-full lg:h-[350px] h-auto hover:border-b-2 cursor-pointer  group hover:translate-y-[-10px] overflow-hidden transition-all ease-in-out duration-200 rounded-[15px] lg:mt-[30px] hover:bg-gray-100 border-[1px] border-gray-200 hover:border-b-black bg-white p-8"
                             >
                                 <h3 className="text-[25px]">{item.heading}</h3>
                                 <p className="my-[15px]">{item.description}</p>
                                 <img
-                                    className="w-[330px] group-hover:scale-[1.1] object-contain duration-300"
+                                    className="w-[220px] mx-auto group-hover:scale-[1.05] object-contain duration-300"
                                     src={item.src}
                                     alt=""
                                 />
