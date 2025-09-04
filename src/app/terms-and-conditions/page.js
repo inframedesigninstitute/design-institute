@@ -1,5 +1,4 @@
-'use client'
-import Link from "next/link";
+"use client"
 
 export default function Terms() {
     return (
@@ -7,10 +6,10 @@ export default function Terms() {
             <div className="max-w-[1320px] rounded-[15px] mx-auto  bg-white p-10">
                 <h2 className="text-[40px] font-bold mb-5">Terms and Conditions</h2>
                 <p>
-                    Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern 'INFRAME SCHOOL OF ART DESIGN & BUSINESS' relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
+                    Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern &#39;INFRAME SCHOOL OF ART DESIGN & BUSINESS&#39; relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
                 </p>
                 <p>
-                    The term 'INFRAME SCHOOL OF ART DESIGN & BUSINESS' or 'us' or 'we' refers to the owner of the website whose registered office is B-09 Behind Kamla Nagar Hospital Pal Link Road Jodhpur Rajasthan. The term 'you' refers to the user or viewer of our website.
+                    The term &#39;INFRAME SCHOOL OF ART DESIGN & BUSINESS&#39; or &#39;us&#39; or &#39;we&#39; refers to the owner of the website whose registered office is B-09 Behind Kamla Nagar Hospital Pal Link Road Jodhpur Rajasthan. The term &#39;you&#39; refers to the user or viewer of our website.
                 </p>
 
                 <div className="my-[25px]">
@@ -38,7 +37,7 @@ export default function Terms() {
                 <div className="my-[25px]">
                     <p className="text-[30px] font-semibold mb-3">Payment and Refund Policy</p>
                     <ul className="ps-5 space-y-2">
-                        <li className="list-disc">After depositing money towards 'Registration & Admission', if a student becomes disinterested, the Institute will not refund the Registration fee/Admission fee.</li>
+                        <li className="list-disc">After depositing money towards &#39;Registration & Admission&#39;, if a student becomes disinterested, the Institute will not refund the Registration fee/Admission fee.</li>
                         <li className="list-disc">If the tuition fee is not paid in lump sum, submission of post dated cheques is mandatory.</li>
                         <li className="list-disc">If the cheque is bounced for any reason, a fine of ₹200 will be charged separately.</li>
                     </ul>

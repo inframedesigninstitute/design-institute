@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link";
 
 export default function Cancellation() {
     return (
@@ -11,7 +10,7 @@ export default function Cancellation() {
                     <ul className="ps-5 space-y-5">
                         <li className="list-disc">During the online payment through credit/debit card if the payment gets debited and the internet goes down due to some external server malfunction or any other similar happening.</li>
                         <li className="list-disc">The system fails to generate the required acknowledgment due to internet malfunction.</li>
-                        <li className="list-disc">The payment gets deducted from the payer's account and does not reach the institute's account or payment gets debited twice due to server error.</li>
+                        <li className="list-disc">The payment gets deducted from the payer's account and does not reach the institute&#39;s account or payment gets debited twice due to server error.</li>
                     </ul>
                     <p className="my-[20px]">We shall not be responsible in any case until the course fee paid by student or parent is credited into the Bank Account of the institute. If credited into our account, the refund policy will be applicable as per the institute norms.</p>
                 </div>
