@@ -21,7 +21,7 @@ import Link from "next/link";
 import { IoMdArrowForward, IoMdClose } from "react-icons/io";
 
 export default function Header() {
-  const [enquiryModel, setEnquiryModel] = useState(true)
+  const [enquiryModel, setEnquiryModel] = useState(false)
   const [subCategoryMenu, setSubCategoryMenu] = useState('')
   const [contactModel, setcontactModel] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
