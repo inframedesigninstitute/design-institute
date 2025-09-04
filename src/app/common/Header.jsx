@@ -12,7 +12,7 @@ import {
   FaPhoneAlt,
   FaUserAlt,
 } from "react-icons/fa";
-import {  HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { MdClose } from "react-icons/md";
 import UserControl from "./UserControl";
 import MegaMenu from "../homePageComponents/MegaMenu";
@@ -79,9 +79,9 @@ export default function Header() {
                     className="text-[16px] font-semibold hover:bg-gray-100 px-[10px] py-[35px] duration-300 cursor-pointer capitalize text-gray-500 group "
                   >
                     {items.parentCategory}
-                    <div className="invisible opacity-0 group-hover:opacity-100 origin-top transition-all brightness-110 duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[900px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-4 p-7 rounded-b-[35px] z-50">
+                    <div className={`invisible opacity-0 group-hover:opacity-100 origin-top transition-all brightness-110 duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[1020px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-4 p-7 rounded-b-[35px] z-50`}>
                       {subCategory.map((subCat, ind) => (
-                        <ul key={ind}>
+                        <ul key={ind} className="border-r-[1px] border-[#e1e1e1]">
                           <li className="text-[20px] capitalize text-gray-900 mb-2">
                             {subCat.name}
                           </li>
@@ -194,7 +194,7 @@ export default function Header() {
           </ul>
         </div>
 
-        {/* subcategorymodel work */}
+        {/* hover mega menu functionality */}
         <div
           className={`${subCategoryMenu ? 'left-0' : 'left-[-100%]'
             } fixed top-0 left-0 w-full h-screen bg-white py-2 px-3 overflow-y-scroll duration-300 scrollbar`}
@@ -219,7 +219,7 @@ export default function Header() {
               {subCategoryMenu}
             </h3>
 
-            {/* Course List */}
+            {/* mega menu  */}
             {subCategoryMenu === 'All Courses' ?
               megaMenuData.map((obj, index) =>
                 obj.subCategory.map((subCatObj, ind) =>
@@ -346,7 +346,7 @@ export default function Header() {
 
 
         <select className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500">
-          <option className="cursor-pointer" value="">Select your field</option>
+          <option className="cursor-pointer" value="">Select Program</option>
           {megaMenuData.map((item, index) => {
             return (
               <option key={index} className="cursor-pointer" value="">{item.parentCategory}</option>
@@ -356,7 +356,7 @@ export default function Header() {
         </select>
 
         <select className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500">
-          <option className="cursor-pointer" value="">Select your field</option>
+          <option className="cursor-pointer" value="">Select Course</option>
           {megaMenuData.map((cat, index) =>
             cat.subCategory.map((subCat, subIndex) =>
               subCat.courses.map((course, courseInd) => {

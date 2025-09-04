@@ -1,165 +1,181 @@
 export const megaMenuData = [
     {
-        parentCategory: 'Online Courses',
+        parentCategory: "Online Courses",
         subCategory: [
             {
-                name: 'Ug Exam',
+                name: "Ug Exam",
                 courses: [
-                    'NIFT Offline Course',
-                    'NID Offline Course',
-                    'UCEED Offline Course',
-                    'COMBOS NIFT/NID/UCEED',
-                    'NATA Online Course',
-                    'JEE B.Arch Online Course',
-                    'COMBOS NATA/JEE'
-                ]
+                    "nift Course",
+                    "nid Course",
+                    "uceed Course",
+                    "combos nift/nid/uceed",
+                    "nata Course",
+                    "jee b.arch Online Course",
+                    "combos nata/jee",
+                ],
             },
             {
-                name: 'Pg Exam',
+                name: "Pg Exam",
                 courses: [
-                    'CEED Online Course',
-                    'FDDI Online Courses',
-                    'NIFT Online Courses',
-                    'NIDOnline Courses',
-                    'GATE Architecture'
-                ]
+                    "ceed Course",
+                    "fddi Courses",
+                    "nift Courses",
+                    "nid Courses",
+                    "gate architectures",
+                ],
             },
             {
-                name: 'Short Courses',
-                courses: [
-                    'Situation/Studio test',
-                    'Portfolio'
-                ]
+                name: "Short Courses",
+                courses: ["Situation/Studio test", "Portfolio"],
             },
             {
-                name: 'Fast Track Courses',
-                courses: [
-                    'Brushup 30 days',
-                    'Brushup 45 days'
-                ]
-            }
-        ]
+                name: "Fast Track Courses",
+                courses: ["Brushup 30 days", "Brushup 45 days"],
+            },
+        ],
     },
     {
-        parentCategory: 'Offline courses',
+        parentCategory: "Offline courses",
         subCategory: [
             {
-                name: 'Design Material',
+                name: "ug exam",
                 courses: [
-                    'NIFT Book Set',
-                    'NIFT Sketching Guide',
-                    'NID Preparation Book',
-                    'NID Previous Year Papers'
-                ]
+                    "Nift course",
+                    "nid course",
+                    "ucced course",
+                    "Fddi course",
+                    "Combo Nift/Nid/Uceed",
+                    "Nata course",
+                    "Jee b.arch course",
+                    "combo nata/jee",
+                ],
             },
             {
-                name: 'Study Material',
+                name: "pg exam",
                 courses: [
-                    'NATA Full Study Kit',
-                    'Drawing Practice Sheets',
-                    'JEE B.Arch Guide',
-                    'Mock Test Papers'
-                ]
+                    "Nift exam",
+                    "nid exam",
+                    "ceed exam",
+                    "fddi exam",
+                    "gate architectures",
+                ],
             },
             {
-                name: 'Combo Material Packs',
-                courses: [
-                    'NIFT + NID + UCEED Books',
-                    'CEED + NID PG Books'
-                ]
-            }
-        ]
+                name: "short course",
+                courses: ["studio/situation test", "portfolios"],
+            },
+        ],
     },
     {
-        parentCategory: 'Study Material',
+        parentCategory: "Study Material",
         subCategory: [
             {
-                name: 'Online Workshops',
-                courses: [
-                    'NIFT Crash Workshop',
-                    'UCEED Mock Series',
-                    'NATA Live Workshop',
-                    'B.Arch Portfolio Workshop'
-                ]
+                name: "Architecture",
+                courses: ["Nata", "jee+mains", "combo nata+jee-mains", "gate architecture"],
             },
             {
-                name: 'Offline Workshops',
+                name: "Bechlor of Design",
                 courses: [
-                    'Design Bootcamp Delhi',
-                    'Architecture Bootcamp Delhi',
-                    'Design Bootcamp Mumbai',
-                    'Architecture Bootcamp Mumbai'
-                ]
+                    "nift b.des",
+                    "nid b.des",
+                    "uceed b.des",
+                    "other design institute",
+                    "combo nift+nid",
+                    "combo nift+nid+uceed",
+                ],
             },
             {
-                name: 'Webinars',
+                name: "fashion tech",
                 courses: [
-                    'How to Crack NID',
-                    'Intro to Architecture Exams',
-                    'Advanced UCEED Workshop',
-                    'JEE B.Arch Strategy Session'
-                ]
-            }
-        ]
+                    "nift b.Ftech",
+                    "fddi b.ftech",
+                    "nift M.ftech",
+                    "fddi m.Ftech",
+                ],
+            },
+            {
+                name: "Master of design",
+                courses: [
+                    "nift m.des",
+                    "nid m.des",
+                    "ceed m.des",
+                    "other masters design institute",
+                    "combo nid+ceed",
+                    "combo nid+ceed+nift",
+                ],
+            },
+        ],
     },
     {
-        parentCategory: 'Test Series',
+        parentCategory: "Test Series",
         subCategory: [
             {
-                name: 'Design Test Series',
+                name: "Design Test Series",
                 courses: [
-                    'NIFT Full Test Series',
-                    'NIFT Sketch Tests',
-                    'UCEED Online Tests',
-                    'UCEED Mock Series'
-                ]
+                    "NIFT Full Test Series",
+                    "NIFT Sketch Tests",
+                    "UCEED Online Tests",
+                    "UCEED Mock Series",
+                ],
             },
             {
-                name: 'Architecture Test Series',
+                name: "Architecture Series",
                 courses: [
-                    'NATA Full Tests',
-                    'NATA Drawing Tests',
-                    'JEE B.Arch Mocks',
-                    'JEE Sample Papers'
-                ]
+                    "NATA Full Tests",
+                    "NATA Drawing Tests",
+                    "JEE B.Arch Mocks",
+                    "JEE Sample Papers",
+                ],
             },
             {
-                name: 'Combo Test Series',
-                courses: [
-                    'NATA + JEE Mock Pack',
-                    'CEED + NID PG Mock Pack'
-                ]
-            }
-        ]
+                name: "Combo Test Series",
+                courses: ["NATA + JEE Mock Pack", "CEED + NID PG Mock Pack"],
+            },
+        ],
     },
     {
-        parentCategory: 'Free Resources',
+        parentCategory: "Free Resources",
         subCategory: [
             {
-                name: 'Design Test Series',
+                name: "Webinars",
                 courses: [
-                    'NIFT Full Test Series',
-                    'NIFT Sketch Tests',
-                    'UCEED Online Tests',
-                    'UCEED Mock Series'
-                ]
+                    "nift ",
+                    "nid",
+                    "nata",
+                    "uceed",
+                ],
             },
             {
-                name: 'Architecture Test Series',
+                name: "Architecture Series",
                 courses: [
-                    'NATA Full Tests',
-                    'NATA Drawing Tests',
-                    'JEE B.Arch Mocks',
-                    'JEE Sample Papers'
-                ]
+                    "nift ",
+                    "nid",
+                    "nata",
+                    "uceed",
+                ],
             },
             {
-                name: 'Combo Test Series',
+                name: "free question paper",
                 courses: [
-                    'NATA + JEE Mock Pack',
-                    'CEED + NID PG Mock Pack'
-                ]
+                    "nift ",
+                    "nid",
+                    "nata",
+                    "uceed",
+                ],
+            },
+            {
+                name: "current affairs",
+                courses: [
+                    "nift ",
+                    "nid",
+                    "nata",
+                    "uceed",
+                ],
+            },
+            {
+                name: 'free res',
+                courses: ['free course videos  ']
             }
-        ]
-    }
+        ],
+    },
 ];

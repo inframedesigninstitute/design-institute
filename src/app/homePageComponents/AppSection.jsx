@@ -48,7 +48,7 @@ export default function AppSection() {
         );
     }, []);
     return (
-        <div className="w-full lg:p-0 p-3 lg:my-[60px] my-[20px] overflow-hidden">
+        <div className="w-full lg:p-0 p-3 lg:mt-[60px] my-[20px] overflow-hidden">
             <div className="lg:mx-6 mx-3">
                 <div className="max-w-[1320px] bg-[#f8f8f8] grid lg:grid-cols-[70%_auto] items-center mx-auto rounded-[10px] ">
                     <div className="lg:p-10 p-5" ref={leftRef}>

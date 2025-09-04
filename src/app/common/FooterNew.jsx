@@ -47,7 +47,7 @@ export default function FooterNew() {
                             <div className="text-white  pr-5 h-[100%] border-white">
                                 <h2 className="text-[24px] mb-4 font-semibold capitalize ">Quick Links</h2>
                                 <ul>
-                                    <Link target="_blank" href={'https://admission.inframeschool.com/'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaFileCirclePlus className="text-[22px]" /> Admission Process  </li></Link>
+                                    <li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaFileCirclePlus className="text-[22px]" /> Admission Process  </li>
                                     <Link href={'/our-blogs'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><RiFilePaper2Fill className="text-[22px]" />Our  Blogs</li></Link>
                                     <Link href={'/download'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaDownload className="text-[22px]" /> Download  </li></Link>
                                     <Link href={'/download'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaRegNewspaper className="text-[22px]" /> Career  </li></Link>

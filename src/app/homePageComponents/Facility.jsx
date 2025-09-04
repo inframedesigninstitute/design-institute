@@ -95,7 +95,7 @@ export default function Facility() {
                             ref={(el) => (cardsRef.current[index] = el)}
                             className={`w-[100%] h-[500px] bg-white relative bg-no-repeat  bg-cover bg-center bg-opacity-90 rounded-3xl shadow-lg border border-red-100 p-8 text-center transition-all flex items-end`}
                         >
-                            <div className='absolute w-[100%] h-[100%] z-[-10] top-0 left-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent rounded-3xl' ></div>
+                            <div className='absolute w-[100%] h-[100%] top-0 left-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent rounded-3xl' ></div>
                             <div className='z-40 text-start max-w-lg'>
 
                                 {/* Title */}
@@ -119,25 +119,25 @@ export default function Facility() {
                             <div>
 
                                 <div
-                                style={{ backgroundImage: `url(${item.src})` }}
-                                key={index}
-                                ref={(el) => (cardsRef.current[index] = el)}
-                                className={`w-[100%] h-[500px] bg-white relative bg-no-repeat  bg-cover bg-center bg-opacity-90 rounded-3xl shadow-lg border border-red-100 p-8 text-center transition-all flex items-end`}
-                            >
-                                <div className='absolute w-[100%] h-[100%] z-[-10] top-0 left-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent rounded-3xl' ></div>
-                                <div className='z-40 text-start max-w-lg'>
+                                    style={{ backgroundImage: `url(${item.src})` }}
+                                    key={index}
+                                    ref={(el) => (cardsRef.current[index] = el)}
+                                    className={`w-[100%] h-[500px] bg-white relative bg-no-repeat  bg-cover bg-center bg-opacity-90 rounded-3xl shadow-lg border border-red-100 p-8 text-center transition-all flex items-end`}
+                                >
+                                    <div className='absolute w-[100%] h-[100%] z-[-10] top-0 left-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-3xl' ></div>
+                                    <div className='z-40 text-start max-w-lg'>
 
-                                    {/* Title */}
-                                    <h3 className="text-[30px] font-bold text-white capitalize tracking-wide mb-3">
-                                        {item.heading}
-                                    </h3>
+                                        {/* Title */}
+                                        <h3 className="text-[30px] font-bold text-white capitalize tracking-wide mb-3">
+                                            {item.heading}
+                                        </h3>
 
-                                    {/* Description */}
-                                    <p className="text-white text-[15px] leading-relaxed">
-                                        {item.description}
-                                    </p>
+                                        {/* Description */}
+                                        <p className="text-white text-[15px] leading-relaxed">
+                                            {item.description}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         ))}
                     </Slider>
