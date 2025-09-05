@@ -115,7 +115,7 @@ export function OnlineCourses() {
                     <FaIndianRupeeSign /> {item.price}/-
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
+                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] w-[100%] rounded-lg hover:text-white font-medium">
                       Add to Cart
                     </button></Link>
                     <button className="bg-gray-900 hover:bg-gray-800 transition duration-300 cursor-pointer py-[7px] text-[14px] rounded-lg text-white font-medium">
@@ -220,7 +220,7 @@ export function OfflineCourses() {
                     <FaIndianRupeeSign /> {item.price}/-
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] rounded-lg hover:text-white font-medium">
+                    <Link href={'/checkout'}><button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[7px] text-[14px] w-[100%] rounded-lg hover:text-white font-medium">
                       Add to Cart
                     </button></Link>
                     <button className="bg-gray-900 hover:bg-gray-800 transition duration-300 cursor-pointer py-[7px] text-[14px] rounded-lg text-white font-medium">
