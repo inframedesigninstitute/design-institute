@@ -91,6 +91,7 @@ export default function Header() {
           <div className="flex items-center gap-5">
             <ul className="flex items-center">
               {megaMenuData.map((items, index) => {
+                const { parentCategory } = items
                 const { subCategory } = items;
                 return (
                   <li
@@ -108,7 +109,7 @@ export default function Header() {
                             {subCat.courses.map((course, courseIndex) => (
                               <Link
                                 key={courseIndex}
-                                href={`/course/${course.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}
+                                href={`/${parentCategory.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}/${course.toLowerCase().replace(/[^a-zA-Z0-9+]/g, "-")}`}
                               >
                                 <li className="ml-2 my-[10px] text-gray-600 hover:text-gray-900 duration-300">
                                   {course}

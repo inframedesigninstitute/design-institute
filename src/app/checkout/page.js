@@ -151,13 +151,6 @@ export default function Checkout() {
                                 </div>
                             </div>
 
-
-
-
-
-
-
-
                         </div>
 
                         <div className="w-[100%] h-[90vh]  p-5 bg-white">
