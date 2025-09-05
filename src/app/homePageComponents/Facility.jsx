@@ -122,17 +122,16 @@ export default function Facility() {
                                     style={{ backgroundImage: `url(${item.src})` }}
                                     key={index}
                                     ref={(el) => (cardsRef.current[index] = el)}
-                                    className={`w-[100%] h-[500px] bg-white relative bg-no-repeat  bg-cover bg-center bg-opacity-90 rounded-3xl shadow-lg border border-red-100 p-8 text-center transition-all flex items-end`}
+                                    className={`w-[100%] h-[500px] relative z-0 bg-no-repeat bg-cover bg-center bg-opacity-90 rounded-3xl shadow-lg border border-red-100 p-8 text-center flex items-end`}
                                 >
-                                    <div className='absolute w-[100%] h-[100%] z-[-10] top-0 left-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-3xl' ></div>
-                                    <div className='z-40 text-start max-w-lg'>
+                                    {/* Gradient Overlay */}
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-3xl z-10'></div>
 
-                                        {/* Title */}
+                                    {/* Text Content */}
+                                    <div className='relative z-20 text-start max-w-lg'>
                                         <h3 className="text-[30px] font-bold text-white capitalize tracking-wide mb-3">
                                             {item.heading}
                                         </h3>
-
-                                        {/* Description */}
                                         <p className="text-white text-[15px] leading-relaxed">
                                             {item.description}
                                         </p>

@@ -183,13 +183,10 @@ export default function Header() {
             </button>
           </div>
           <ul className="px-3">
-            <li onClick={() => setSubCategoryMenu('All Courses')} className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2 flex items-center gap-1 justify-between">
-              All Courses <FaAngleRight />
-            </li>
             {megaMenuData.map((item, index) => {
               // console.log(item.parentCategory)
               return (
-                <li onClick={() => setSubCategoryMenu(item.parentCategory)} key={index} className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
+                <li onClick={() => setSubCategoryMenu(item.parentCategory)} key={index} className="my-[25px] text-[22px] border-b-[1px] border-gray-100 pb-2">
                   {item?.parentCategory}
                 </li>
               )
@@ -197,7 +194,7 @@ export default function Header() {
             <li onClick={() => {
               setEnquiryModel(true)
               setMobileMenu(false)
-            }} className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
+            }} className="my-[25px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Enquiry Now
             </li>
 
@@ -240,49 +237,30 @@ export default function Header() {
             </h3>
 
             {/* mega menu  */}
-            {subCategoryMenu === 'All Courses' ?
-              megaMenuData.map((obj, index) =>
-                obj.subCategory.map((subCatObj, ind) =>
-                  subCatObj.courses.map((course, indx) => (
-                    <li
-                      key={`${index}-${ind}-${indx}`}
-                      onClick={() => {
-                        setMobileMenu(false);
-                        setSubCategoryMenu("");
-                      }}
-                      className="shadow-xs list-none border-[1px] border-gray-200 py-3 px-4 rounded-md bg-white text-gray-800 hover:bg-gray-100 mb-3 transition duration-200"
-                    >
-                      {course}
-                    </li>
-                  ))
-                )
-              )
-              :
-              <ul className="">
-                {megaMenuData
-                  .filter((parentCat) => parentCat.parentCategory === subCategoryMenu)
-                  .flatMap((parentCat) =>
-                    parentCat.subCategory.flatMap((subCat, subIdx) =>
-                      subCat.courses.map((course, courseIdx) => (
-                        <Link
-                          key={`${subIdx}-${courseIdx}`}
-                          href={`/course/${course.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}
+            <ul className="">
+              {megaMenuData
+                .filter((parentCat) => parentCat.parentCategory === subCategoryMenu)
+                .flatMap((parentCat) =>
+                  parentCat.subCategory.flatMap((subCat, subIdx) =>
+                    subCat.courses.map((course, courseIdx) => (
+                      <Link
+                        key={`${subIdx}-${courseIdx}`}
+                        href={`/course/${course.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`}
+                      >
+                        <li
+                          onClick={() => {
+                            setMobileMenu(false);
+                            setSubCategoryMenu("");
+                          }}
+                          className="shadow-xs border-[1px] border-gray-200 py-3 px-4 rounded-md bg-white text-gray-800 hover:bg-gray-100 mb-3 transition duration-200"
                         >
-                          <li
-                            onClick={() => {
-                              setMobileMenu(false);
-                              setSubCategoryMenu("");
-                            }}
-                            className="shadow-xs border-[1px] border-gray-200 py-3 px-4 rounded-md bg-white text-gray-800 hover:bg-gray-100 mb-3 transition duration-200"
-                          >
-                            {course}
-                          </li>
-                        </Link>
-                      ))
-                    )
-                  )}
-              </ul>
-            }
+                          {course}
+                        </li>
+                      </Link>
+                    ))
+                  )
+                )}
+            </ul>
 
 
           </div>
@@ -323,9 +301,9 @@ export default function Header() {
 
       {/* Form */}
       <form className={`${enquiryModel ? 'right-0' : '-right-full'} space-y-5 lg:w-[30%] w-[80%] z-40  h-auto mt-5 flex-1 fixed top-1/2 duration-700 -translate-y-1/2  py-10 px-5 rounded-[10px] text-gray-900 bg-white `} >
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <h2 className="text-[30px] font-[500]">Enquiry now</h2>
-          <span onClick={() => setEnquiryModel(false)} className="cursor-pointer hover:bg-gray-900 hover:text-white p-[10px] rounded-[20px] text-gray-900
+          <span onClick={() => setEnquiryModel(false)} className="cursor-pointer hover:bg-gray-900 hover:text-white p-[10px] rounded-[10px] text-gray-900
            duration-300 text-[25px]"><IoClose /></span>
         </div>
         <input
@@ -338,13 +316,13 @@ export default function Header() {
           required
           className="border border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
           placeholder="Enter Your Email"
-          type="password"
+          type="email"
         />
         <input
           required
           className="border border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition"
           placeholder="Enter Your Phone Number"
-          type="password"
+          type="number"
         />
         <select className="border cursor-pointer border-gray-300 w-full rounded-[15px] px-3 py-[10px] focus:outline-none focus:ring-2 focus:ring-gray-900 transition text-gray-500">
           <option className="cursor-pointer" value="">Select your state</option>
@@ -395,7 +373,7 @@ export default function Header() {
 
         <button
           type="submit"
-          className="w-full  rounded-[15px] font-semibold py-3 text-white bg-gray-900 hover:bg-white hover:text-gray-900 border-transparent  border-2 hover:border-gray-900  cursor-pointer duration-300 text-[16px]"
+          className="w-full  rounded-[15px] font-semibold py-3 text-white bg-gray-900 hover:bg-white hover:text-gray-900 border-transparent  border-2 hover:border-gray-900 cursor-pointer duration-300 text-[16px]"
         >
           Enquiry Now
         </button>

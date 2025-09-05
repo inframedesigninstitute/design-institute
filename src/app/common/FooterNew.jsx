@@ -13,10 +13,10 @@ export default function FooterNew() {
     return (
         <>
             <footer className="">
-                <div className="w-full lg:mt-[60px] mt-[30px]  bg-gradient-to-b from-black/5 via-transparent to-transparent text-black lg:px-6 px-3">
+                <div className="w-full lg:mt-[60px]  bg-gradient-to-b from-black/5 via-transparent to-transparent text-black lg:px-6 px-3">
                     <div className="max-w-[1320px] mx-auto py-[30px] ">
                         <h2 className="text-[30px] text-black font-bold capitalize mb-5 pb-1">Courses We Provide</h2>
-                        <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-10">
+                        <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
                             {megaMenuData.map((item, index) => (
                                 <ul key={index}>
                                     <li className="capitalize text-[20px] mb-3 font-semibold">
@@ -43,7 +43,7 @@ export default function FooterNew() {
 
                 <div className="w-full lg:py-[30px] py-[20px] bg-black lg:px-6 px-3 " >
                     <div className="max-w-[1320] mx-auto">
-                        <div className="grid md:grid-cols-[20%_22%_22%_auto]  justify-between items-start lg:gap-0 gap-5">
+                        <div className="grid lg:grid-cols-[20%_22%_22%_auto] md:grid-cols-2 grid-cols-1  justify-between items-start lg:gap-0 gap-5">
                             <div className="text-white  pr-5 h-[100%] border-white">
                                 <h2 className="text-[24px] mb-4 font-semibold capitalize ">Quick Links</h2>
                                 <ul>

@@ -20,7 +20,7 @@ export default function StudyMaterials() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 },
             },
             {
@@ -59,6 +59,7 @@ export default function StudyMaterials() {
             src: "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/3eb5198e-6f36-4df4-ad97-81716b80bab2.webp",
         },
     ];
+
     return (
         <div className="w-full lg:my-[40px] my-[30px]">
             <div className="max-w-[1320px] lg:p-0 p-3 mx-auto lg:px-6 px-3">
