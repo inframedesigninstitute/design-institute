@@ -189,10 +189,7 @@ export default function About() {
                         </h3>
                         <p className="text-white/45 text-justify text-[18px] tracking-tight leading-[35px]">
                             {" "}
-                            Is established by the Inframe Educational Society under Rajasthan
-                            shed by the Inframe Educational Society under RajEducational
-                            Society under Rajasthan shed by the Inframe of art, design and
-                            business will be one of.
+                            Is established by the Inframe Educational Society under the Government of Rajasthan, the Inframe School of Art, Design & Business is envisioned as a premier institution dedicated to nurturing creativity, innovation, and business leadership in the fields of art and design.
                         </p>
                     </div>
                 </div>

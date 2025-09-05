@@ -16,7 +16,7 @@ export default function MegaMenuContent({ category, setMegaMenuOpen }) {
                         {sub.courses.map((course, courseIdx) => (
                             <Link
                                 key={courseIdx}
-                                href={`/course/${course.toLowerCase().replace(/[^a-zA-Z0-9+]/g, "-")}`}
+                                href={`/${categoryData.parentCategory.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}/${course.toLowerCase().replace(/[^a-zA-Z0-9+]/g, "-")}`}
                             >
                                 <button
                                     onClick={() => setMegaMenuOpen(false)}

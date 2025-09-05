@@ -26,9 +26,9 @@ export default function FooterNew() {
                                         subCat.courses.map((course, courseIndex) => (
                                             <Link
                                                 key={`${subIdx}-${courseIndex}`}
-                                                href={`/course/${course.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}`}
+                                                href={`/${item.parentCategory.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}/${course.toLowerCase().replace(/[^a-zA-Z0-9+]/g, "-")}`}
                                             >
-                                                <li className="my-2 text-[16px] cursor-pointer text-gray-700 duration-300 capitalize hover:text-black">
+                                                <li key={courseIndex} className="my-2 text-[16px] cursor-pointer text-gray-700 duration-300 capitalize hover:text-black">
                                                     {course}
                                                 </li>
                                             </Link>
@@ -52,10 +52,9 @@ export default function FooterNew() {
                                     <Link href={'/download'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaDownload className="text-[22px]" /> Download  </li></Link>
                                     <Link href={'/download'}><li className="mb-[10px] hover:text-gray-300 duration-100 text-[17px] cursor-pointer flex items-center gap-2"><FaRegNewspaper className="text-[22px]" /> Career  </li></Link>
 
-
                                     {topColleges.map((item, index) => {
                                         return (
-                                            <Link href={`/top-colleges/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`} ><li className="mb-[10px] hover:text-gray-300 duration-100 text-[16px] cursor-pointer capitalize flex items-center gap-2"><FaGraduationCap className="text-[25px]" /> {item}</li></Link>
+                                            <Link key={index} href={`/top-colleges/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, "-")}`} ><li key={index} className="mb-[10px] hover:text-gray-300 duration-100 text-[16px] cursor-pointer capitalize flex items-center gap-2"><FaGraduationCap className="text-[25px]" /> {item}</li></Link>
                                         )
                                     })}
                                 </ul>
